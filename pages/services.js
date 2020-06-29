@@ -8,7 +8,7 @@ const Services = () => {
         <title>Next.js - Services</title>
       </Head>
       <Container>
-        <h1>Services!</h1>
+        <h1>En construcción...</h1>
       </Container>
     </>
   );

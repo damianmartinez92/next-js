@@ -1,3 +1,5 @@
+import Router from "next/router";
+
 const Users = (props) => {
   return (
     <ul className="list-group">
@@ -5,6 +7,8 @@ const Users = (props) => {
         <li
           key={user.id}
           className="list-group-item list-group-item-action d-flex justify-content-between align-items-center"
+          onClick={() => Router.push("/users/[id]", `/users/${user.id}`)}
+          style={{ cursor: "pointer" }}
         >
           <div>
             <h5>
